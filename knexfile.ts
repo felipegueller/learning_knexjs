@@ -12,6 +12,13 @@ module.exports = {
       port: process.env.DBPORT,
       user: process.env.DBUSER,
       password: process.env.DBPASS,
+    },
+    migrations: {
+      tableName: 'knex_migrations',
+      directory: 'src/database/migrations'
+    },
+    seeds: {
+      directory: 'src/database/seeds'
     }
   }
 };
